@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity
             if (mStoryIndex == CLICKED_TOP_BUTTON_FIRST)
                 {
                 mStoryTextView.setText(R.string.T6_End);
-                turnOffButtons();
+                hideButtons();
                 }
             else
                 {
@@ -95,11 +95,11 @@ public class MainActivity extends AppCompatActivity
                 mStoryTextView.setText(R.string.T4_End);
             else
                 mStoryTextView.setText(R.string.T5_End);
-            turnOffButtons();
+            hideButtons();
             }
         }
 
-    private void turnOffButtons()
+    private void hideButtons()
         {
         mButtonTop.setVisibility(View.GONE);
         mButtonBottom.setVisibility(View.GONE);
